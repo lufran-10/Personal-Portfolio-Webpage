@@ -1,0 +1,310 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400&family=Yeseva+One&display=swap');
+
+/* font-family: 'Josefin Sans', sans-serif;
+font-family: 'Yeseva One', cursive; */
+
+:root {
+  --color1: #FEFAE0;
+  --color2: #BC6C25;
+  --color3: #283618;
+  --color4: #dda15e;
+  --color5: #606c38;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 10px;
+  font-family: 'Josefin Sans', sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+header {
+  background-color: #fefae0;
+  width: 100%;
+  height: 10vh;
+  color: #283618;
+  font-size: 1.5rem;
+  position: sticky;
+  top: 0;
+  z-index: 2;
+}
+
+#navbar {
+  width: 97%;
+  height: 100%;
+  padding-right: 3%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 6%;
+}
+
+header a:hover {
+  transform: scale(1.3);
+}
+
+main {
+  font-size: 1.5rem;
+  width: 100%;
+}
+
+#welcome-section {
+  height: 90vh;
+  width: 100%;
+  color: #fefae0;
+  text-align: center;
+  padding-top: 10vh;
+  background-color: #bc6c25;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='88' height='24' viewBox='0 0 88 24'%3E%3Cg fill-rule='evenodd'%3E%3Cg id='autumn' fill='%23dda15e' fill-opacity='0.4'%3E%3Cpath d='M10 0l30 15 2 1V2.18A10 10 0 0 0 41.76 0H39.7a8 8 0 0 1 .3 2.18v10.58L14.47 0H10zm31.76 24a10 10 0 0 0-5.29-6.76L4 1 2 0v13.82a10 10 0 0 0 5.53 8.94L10 24h4.47l-6.05-3.02A8 8 0 0 1 4 13.82V3.24l31.58 15.78A8 8 0 0 1 39.7 24h2.06zM78 24l2.47-1.24A10 10 0 0 0 86 13.82V0l-2 1-32.47 16.24A10 10 0 0 0 46.24 24h2.06a8 8 0 0 1 4.12-4.98L84 3.24v10.58a8 8 0 0 1-4.42 7.16L73.53 24H78zm0-24L48 15l-2 1V2.18A10 10 0 0 1 46.24 0h2.06a8 8 0 0 0-.3 2.18v10.58L73.53 0H78z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+}
+
+h1, h2 {
+  font-family: 'Yeseva One', cursive;
+  font-weight: 500;
+}
+
+h1 {
+  font-size: 4rem;
+  padding: 3.5em 0 0.8em;
+}
+
+h2 {
+  font-size: 2.3rem;
+}
+
+#projects {
+  width: 94%;
+  padding: 7% 3% 0 3%;
+  height: 90vh;
+  background-color: #fefae0;
+  color: #606c38;
+  text-align: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  row-gap: 0;
+}
+
+#projects h2 {
+  width: 90%;
+  margin: -4em auto;
+}
+
+#projects div {
+  width: 30%;
+  min-width: 252px;
+  height: 30%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  background-color: #dda15e;
+  border-radius: 5% 5% 20% 20%;
+}
+
+#projects div:last-of-type {
+  margin: 0 auto;
+}
+
+.project-title {
+  font-size: 1.5rem;
+  margin: -1em 0 0.5em;
+  background-color: #FEFAE0;
+  width: 100%;
+  border-radius: 5px;
+  padding: 0.2em 0;
+  font-weight: 400;
+  color: #dda15e;
+}
+
+img {
+  max-height: 70%;
+  width: auto;
+  max-width: 100%;
+  border-radius: 5px;
+}
+
+#projects div:hover {
+  animation: select 1s ease 0s 1 normal forwards;
+  cursor: pointer;
+}
+
+#contact {
+  width: 100%;
+  height: 90vh;
+  color: #FEFAE0;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  font-size: 3rem;
+  background-color: #283618;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='109' height='109' viewBox='0 0 200 200'%3E%3Cdefs%3E%3ClinearGradient id='a' gradientUnits='userSpaceOnUse' x1='100' y1='33' x2='100' y2='-3'%3E%3Cstop offset='0' stop-color='%23000' stop-opacity='0'/%3E%3Cstop offset='1' stop-color='%23000' stop-opacity='1'/%3E%3C/linearGradient%3E%3ClinearGradient id='b' gradientUnits='userSpaceOnUse' x1='100' y1='135' x2='100' y2='97'%3E%3Cstop offset='0' stop-color='%23000' stop-opacity='0'/%3E%3Cstop offset='1' stop-color='%23000' stop-opacity='1'/%3E%3C/linearGradient%3E%3C/defs%3E%3Cg fill='%23212f12' fill-opacity='0.39'%3E%3Crect x='100' width='100' height='100'/%3E%3Crect y='100' width='100' height='100'/%3E%3C/g%3E%3Cg fill-opacity='0.39'%3E%3Cpolygon fill='url(%23a)' points='100 30 0 0 200 0'/%3E%3Cpolygon fill='url(%23b)' points='100 100 0 130 0 100 200 100 200 130'/%3E%3C/g%3E%3C/svg%3E");
+}
+
+#contact a:hover {
+  animation: contactme 2s ease 0s 1 normal forwards;
+}
+
+@keyframes select {
+  0% {
+		box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+		transform: scale(1) translateY(0);
+	}
+
+	100% {
+		box-shadow: 0 12px 20px -12px rgba(0, 0, 0, 0.35);
+		transform: scale(1.1) translateY(-12px);
+    background-color: #606c38;
+	}
+}
+
+@keyframes contactme {
+	0%,
+	100% {
+		transform: translateX(0%);
+		transform-origin: 50% 50%;
+	}
+
+	15% {
+		transform: translateX(-30px) rotate(-6deg);
+	}
+
+	30% {
+		transform: translateX(15px) rotate(6deg);
+	}
+
+	45% {
+		transform: translateX(-15px) rotate(-3.6deg);
+	}
+
+	60% {
+		transform: translateX(9px) rotate(2.4deg);
+	}
+
+	75% {
+		transform: translateX(-6px) rotate(-1.2deg);
+	}
+}
+
+@media (max-width: 916px) {
+  header {
+    font-size: 1.2rem;
+  }
+  h2 {
+    font-size: 2.1rem;
+  }
+  #projects {
+    justify-content: center;
+  }
+  #projects div {
+    background-color: unset;
+    border-radius: 5px;
+    justify-content: center;
+    position: relative;
+    margin: 0 1em;
+  }
+  #projects div:last-of-type {
+    margin: 0 1em;
+}
+  .project-title {
+    position: absolute;
+    top: 0;
+    left: 0;
+    font-size: 1.3rem;
+    padding: 25% 0 0 0;
+    margin: 0;
+    z-index: 1;
+    background-color: #606c38;
+    height: 65%;
+    opacity: 0;
+  }
+  .project-title:hover {
+    opacity: 0.9;
+  }
+
+  img {
+    max-height: 90%;
+  }
+  #contact {
+    font-size: 2.5rem;
+  }
+}
+
+@media (max-width: 653px) {
+  h1 {
+    font-size: 3.5rem;
+  }
+  h2 {
+    font-size: 1.8rem;
+  }
+  #projects {
+    height: 700px;
+    overflow-y: auto;
+  }
+  #projects h2 {
+    margin: 1em 0 1em;
+  }
+  #projects div {
+    height: 20%;
+    width: 20%;
+  }
+  .project-title {
+    padding: 20% 0 0 0;
+  }
+  #contact {
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 433px) {
+  header {
+    font-size: 1rem;
+  }
+  h1 {
+    font-size: 3rem;
+  }
+  h2 {
+    font-size: 1.4rem;
+  }
+  #contact {
+    font-size: 1.8rem;
+  }
+}
+
+@media (max-width: 345px) {
+  header {
+    font-size: 1rem;
+  }
+  h1 {
+    font-size: 2rem;
+  }
+  h2 {
+    font-size: 1.2rem;
+  }
+  #projects div {
+    min-width: 185px;
+    margin: 0;
+  }
+  .project-title {
+    padding: 27% 0 0 0;
+    font-size: 0.9rem;
+  }
+  #contact {
+    flex-direction: column;
+    justify-content: space-evenly;
+    font-size: 1.4rem;
+  }
+}
